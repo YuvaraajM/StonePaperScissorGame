@@ -1,0 +1,62 @@
+:root{
+    --win-color:green;
+    --lose-color:red;
+}
+
+
+.header{
+    text-align: center;
+    font-size: 23px;
+    max-width: 1440px;
+}
+*{
+    box-sizing: border-box;
+    padding: 0;
+    /* margin: 0; */
+}
+
+.restart-btn
+{
+outline: none;
+background: none;
+padding: 0.4rem 0.4rem;
+display: none;
+cursor: pointer;
+font-size: 1.5rem;
+border:none;
+}
+
+.restart-btn:hover{
+    background: blue;
+    color: white;
+}
+
+.container{
+    text-align: center;
+}
+
+.score{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    margin-bottom: 15px;
+    /* max-width: 800px;
+    margin-left: 215px;
+    text-align: center; */
+}
+.score p:first-child{
+    background-color: blue;
+    color: white;
+}
+
+.score p:last-child{
+    background-color: black;
+    color: white;
+}
+.choices{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+}
+.choice:hover{
+    color: blue;
+    cursor:pointer;
+}

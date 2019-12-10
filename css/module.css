@@ -1,0 +1,52 @@
+:root{
+    --win-color:green;
+    --lose-color:red;
+    --animation-duration:3s;
+}
+.model{
+    display:none;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    position: fixed;
+    background-color: rgba(0, 0,0, 0.4);
+    overflow: auto;
+    height: 100%;
+    width: 100%;
+}
+
+.model-content{
+    background: white;
+    border-radius: 10px;
+    width: 280px;
+    text-align: center;
+    margin: 20% auto;
+    animation-name: modelopen;
+    animation-duration: var(--animation-duration);
+    padding: 1rem;
+}
+.win
+{
+    text-align: center;
+    margin-top:1rem;
+    color:var(--win-color);
+}
+.lose
+{
+    text-align: center;
+    margin-top:1rem;
+    color:var(--lose-color);
+}
+#display{
+    font-size: 1.2rem;
+    margin-bottom:1rem;
+}
+
+@keyframes modelopen{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}

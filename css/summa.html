@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style type="text/css">
+        /* .model
+        {
+            z-index: 1;
+            top: 0;
+            left:0;
+            /* background-color: rgba(0, 0, 0, 0.4); */
+            /* height: 100%;
+            width: 100%;
+            position: fixed;
+            overflow: auto;
+        }
+        .model-content
+        {
+            background-color: white;
+            margin:20% auto;
+            width: 280px;
+            animation-name: summa;
+            animation-duration: 4s;
+        } */
+        /* @keyframes summa{
+            from{
+                opacity: 0;
+            }
+            to{
+                opacity: 1;
+            }
+        } */ */
+    </style>
+</head>
+<body>
+    <div class="model" id="hello">
+       <!-- <div class="model-content">
+           hello
+           how are you?
+       </div> -->
+    </div>
+    <button class="summa1" id="num1">hi</button>
+    <div class="summa1" id="num2">dejk</div>
+    <div class="summa1" id="num3">fjkds</div>
+    <button>hello</button>
+    <script type="text/javascript">
+            var su=document.querySelectorAll(".summa1");
+            su.forEach(sum => sum.addEventListener("click",function le(sum){
+                console.log("fn called");
+                var res=sum.target.id;
+                console.log(res);
+            }));
+            </script>
+</body>
+
+</html>
